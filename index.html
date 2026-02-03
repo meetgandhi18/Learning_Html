@@ -1,53 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body
-    style="background-color: #fff;"
-  >
-      <div
-      style="
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-      "
-    >
-    <div style="border: 1px solid black; width:auto ; height: auto; justify-content: center; text-align: center;">
-      <h1 style="color: black;">Form</h1>
-    <form enctype="multipart/form-data" style="color: black; margin-top: 30px; margin-left: 30px; margin-bottom: 30px;">
-      <input type="file" />
-      <br />
-      <br />
+<head>
+    <meta charset="UTF-8">
+    <title>Toss Flip App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <select multiple>
-        <optgroup label="Frontend">
-          <option value="html">HTML</option>
-          <option value="css">CSS</option>
-          <option value="javascript">JavaScript</option>
-        </optgroup>
+    <div class="container">
+        <h1>🪙 Toss Flip App</h1>
 
-        <optgroup label="Backend">
-          <option value="php">PHP</option>
-          <option value="laravel">Laravel</option>
-          <option value="nodejs">Node.js</option>
-        </optgroup>
-      </select>
-      <br />
-      <br />
-      <input
-        type="submit"
-        value="submit"
-        style="width: 60px; height: 30px; cursor: pointer"
-        onmouseover="this.style.backgroundColor = 'blue'"
-        onmouseout="this.style.backgroundColor = 'white'"
-      />
-    </form>
+        <div id="coin" class="coin">
+            Heads
+        </div>
+
+        <button onclick="flipCoin()">Flip Coin</button>
+
+        <p id="result"></p>
     </div>
-    </div>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
